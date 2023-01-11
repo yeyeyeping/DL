@@ -3,9 +3,9 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-
 def make_one_hot(label: torch.Tensor, classes_num: int):
     '''
+    todo:本版本只适合的label形状为:1xHxW
     :param label:语义分割对应的标签，Bx1xHxW
     :param classes_num:类别数
     :return: 独热编码后的结果
