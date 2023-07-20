@@ -32,5 +32,5 @@ torch.matmul最强大：
 ![img.png](img.png) </br>
 如果
 运算符*映射到torch.mul,element-wise的运算，形状相同或者符合[广播机制](CodeForTool/np/README.md)都可以做
-运算符@映射到torch.bmm
+运算符@映射到torch.matmul
 

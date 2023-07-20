@@ -65,3 +65,19 @@ self.linear_out = nn.Linear(in_dim if num_layers == 1 else inner_dim, out_dim) i
 log_softmax数学上与log(softmax(x))等同，但计算时会优化，优化后也解决了上溢和下溢问题
 
 ![image-20230302104513473](README.assets/image-20230302104513473.png)
+
+### KLDivLoss与nn.functional.kl_div:
+
+`注意传入的input必须要是log后的结果，而target需不需要取决于参数log_target(默认为False，默认情况下传入的target是没有log过的的)`
+
+KL散度
+
+![image-20230704162142548](/home/yeep/project/py/DL-master/CodeForAlgorithm/TorchCode/Loss/assets/image-20230704162142548.png)
+$$
+L(input, target) = target \cdot log \frac{target}{input} = target \cdot (logtarge - log input)
+$$
+但在实现时：
+
+![image-20230704162952338](/home/yeep/project/py/DL-master/CodeForAlgorithm/TorchCode/Loss/assets/image-20230704162952338.png)
+
+![image-20230704162902089](/home/yeep/project/py/DL-master/CodeForAlgorithm/TorchCode/Loss/assets/image-20230704162902089.png)
