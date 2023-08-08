@@ -21,7 +21,7 @@ dim：int,沿着那个tensor进行分割
 
 ###  torch.dot、torch.mul、torch.mm、torch.bmm、torch.matmul，*与@
 torch.dot只能用在1维tensor上，计算两个向量内积</br>
-torch.mul element-wise的运算，形状符号的都可以</br>
+torch.mul element-wise的运算，形状符合的都可以</br>
 torch.mm 矩阵乘法，只能用于2维数组，且必须满足中间相同取两边，类似lxm与mxl形状的数组相乘</br>
 torch.bmm torch.mm的升级版本，忽略第一维度进行矩阵乘法</br>
 torch.matmul最强大：

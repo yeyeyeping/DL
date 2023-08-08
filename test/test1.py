@@ -3,7 +3,8 @@ from torch.nn import CrossEntropyLoss
 from torch.nn import functional as F
 from torchvision.models import alexnet
 from torch import autograd
-model = alexnet()
-criterion = CrossEntropyLoss(reduction="none")
-x = torch.randn([16,3,227,227])
-print(x.tanh(dim=1))
+from torch.nn import LazyLinear, Linear
+
+a = LazyLinear(8)
+b = torch.randn((16, 9, 9))
+print(a(b).shape)

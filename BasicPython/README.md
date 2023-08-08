@@ -7,7 +7,7 @@
 
 ## 命令规范
 
-![img](file:////home/yeep/.config/QQ/nt_qq_45a73b733af56fd5106fcb29a0349069/nt_data/Pic/2023-02/Ori/d665f1bbd3479499e6527a0126f83dc5.jpeg)
+![img](assets/eb824bef6b2c9.jpeg)
 
 ## Typing
 
